@@ -7,30 +7,52 @@ button2.addEventListener('click',alertbtn);
 // mouse over
 
 const b = document.querySelector('.btn-3 ');
+let k = 0;
 function change(){
-    b.style.backgroundColor='blue';
+    // b.style.backgroundColor='blue';
+    if(k === 0){
+        b.style.backgroundColor='blue';
+        k = 1
+    } else {
+        b.style.backgroundColor='gray';
+        k = 0
+    }
 }
+b.addEventListener('click',change);
 
-b.addEventListener('mouseover',change);
 
-let revealBtn =document.querySelector(".reveal-btn");
-let hiddenContent = document.querySelector(".hidden-content");
+// let revealBtn =document.querySelector(".reveal-btn");
+// let hiddenContent = document.querySelector(".hidden-content");
 
-function show() {
-    if(hiddenContent.classList.contains("reveal-btn")){
-        hiddenContent.classList.remove("reveal-btn");
+// function show() {
+//     if(hiddenContent.classList.contains("reveal-btn")){
+//         hiddenContent.classList.remove("reveal-btn");
+//     }
+//     else{
+//         hiddenContent.classList.add("reveal-btn");
+//     }
+
+// }
+// revealBtn.addEventListener('click', show);
+
+let z=document.querySelector('.reveal-btn');
+let p=document.querySelector('.hidden-content');
+let sp=document.querySelector('.second-paragraph');
+let m=true;
+
+
+function show(){
+    if(m === true){
+        
+        sp.innerHTML = p.textContent
+
+        m=false;
     }
     else{
-        hiddenContent.classList.add("reveal-btn");
+        sp.textContent = ''
+        m=true;
     }
-
 }
-revealBtn.addEventListener('click', show);
+z.addEventListener('click',show)
 
-let a=document.querySelector('#fnumb');
-let c=document.querySelector('snumb');
 
-function add{
-    let d=a+c;
-    
-}
