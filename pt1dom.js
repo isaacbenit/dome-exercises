@@ -55,4 +55,26 @@ function show(){
 }
 z.addEventListener('click',show)
 
+let zack=document.querySelector('#wap')
+let ben=3;
+function conv(){
+    if(ben===3){
+        zack.innerHTML=zack.textContent + " thank you";
+        ben=ben-1;
+    }
+    else if(ben===2){
+        
+        zack.style.backgroundColor="yellow"
+        ben-=1;
+    }
+    else if(ben===1){
+        zack.innerHTML="Good Bye";
+        ben-=1;
+    }
+    else{
+        zack.style.display='none';
+        
+    }
+}
+zack.addEventListener('click',conv);
 
