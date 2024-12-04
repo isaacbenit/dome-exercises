@@ -13,6 +13,7 @@
     </ul>
     <button onclick="add()" class="btn">click me</button>
     <input type="radio" name="language" value="JavaScript">
+    <p id="tr" class="bob">i am trying </p>
 </body>
 <script>
    let z = document.createElement("div");
@@ -21,16 +22,25 @@
    document.querySelector('body').appendChild(z);
    console.log(z);
    let m=0;
-
+   let cp=document.getElementsByTagName('li');
+   console.log(cp);
+   let man=[].map.call(cp,(cp)=>cp.textContent);
+   console.log(man.childNodes.nodeValue)
+    // let nn = document.querySelector('#tr')
+    // console.log(nn.className)
     function add(){
         let n= document.createElement('li');
-        // n.classList.add('list');
+        // n.className.add('list');
+        n.classList.add('list');
         n.textContent=m;
         document.querySelector('.list').appendChild(n);
         m++;
+        console.log(n.className);
     
     }
-    
+    const el = document.getElementById("tr");
+el.className = el.className === "bob" ? "active" : "inactive";
+    console.log(el.className);
     
 </script>
 </html>
