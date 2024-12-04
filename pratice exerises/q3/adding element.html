@@ -12,6 +12,7 @@
         <li>three</li>
     </ul>
     <button onclick="add()" class="btn">click me</button>
+    <input type="radio" name="language" value="JavaScript">
 </body>
 <script>
    let z = document.createElement("div");
@@ -19,19 +20,17 @@
    z.textContent='hello';
    document.querySelector('body').appendChild(z);
    console.log(z);
+   let m=0;
 
     function add(){
         let n= document.createElement('li');
-        n.classList.add('list');
-        let i=0;
-        n.textContent=Number(i);
-        i++;
+        // n.classList.add('list');
+        n.textContent=m;
         document.querySelector('.list').appendChild(n);
-        
-
-
+        m++;
+    
     }
-    list.nodelist;
-    console.log();
+    
+    
 </script>
 </html>

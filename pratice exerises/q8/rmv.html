@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="rm()">click</button>
+
+    <ul>
+        <li>on2</li>
+        <li>two</li>
+        <li>three</li>
+    </ul>
+</body>
+<script>
+    let z=document.querySelectorAll('li');
+    let a=1;
+    function rm(){
+        let p=z.length -a;
+        z[p].remove();
+        a++;
+    }
+    // addEventListener('click',()=> )
+</script>
+</html>

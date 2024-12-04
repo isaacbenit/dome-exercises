@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick='disp()' class="zack">click here</button>
+    <h2>you</h2>
+    <h2>me</h2>
+    <h1>2 of us</h1>
+    
+</body>
+<script>
+    let p= document.getElementsByTagName('h1');
+    console.log(p.length)
+    function disp() {
+        let z=document.getElementsByTagName('h2');
+        alert(`the number of h2 in the documents are: ${z.length}`);
+        console.log(z.length);
+
+    }
+</script>
+</html>

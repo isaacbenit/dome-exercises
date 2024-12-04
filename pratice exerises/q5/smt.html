@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" onsubmit="return false">
+    <input type="text" id="npt">
+    <input type="submit" onclick='show()'>
+</form>
+<p id="pg"></p>
+
+</body>
+<script>
+    let d=document.querySelector('#pg');
+    let k=document.querySelector('#npt');
+    
+    function show(){
+        d.innerHTML= k.value;
+    }
+</script>
+</html>

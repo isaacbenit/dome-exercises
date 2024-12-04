@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 >this should change</h1>
+</body>
+<script>
+    let z=document.getElementsByTagName('h1')[0];
+    z.addEventListener('mouseover',()=>z.innerHTML='the new content')
+    z.addEventListener('mouseout',()=>z.innerHTML='this should change')
+    // function chang(){
+    //      z.innerHTML='the new content'
+    // }
+    // // addEventListener('mouseover',()=>{z.textcontent='the new content'});
+</script>
+</html>

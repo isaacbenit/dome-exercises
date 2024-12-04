@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="show()">click</button>
+    <p class="b">this this the paragraph</p>
+</body>
+<script>
+    let z= document.querySelector('.b');
+    console.log(z)
+    let k=true;
+    function show(){
+        if(k===true){
+        z.style.fontSize='xxx-large';
+        z.style.backgroundColor='blue';
+        k=false;
+    }
+        else{
+            z.style=''
+            k=true;
+        }
+    }
+
+</script>
+</html>
