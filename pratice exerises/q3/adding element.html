@@ -31,13 +31,15 @@
     function add(){
         let n= document.createElement('li');
         // n.className.add('list');
-        n.classList.add('list');
+        // n.classList.add('list');
         n.textContent=m;
-        document.querySelector('.list').appendChild(n);
+        body.querySelector('.list').appendChild(n);
         m++;
         console.log(n.className);
+        n.addEventListener('moveover',changeText)
     
     }
+    
     const el = document.getElementById("tr");
 el.className = el.className === "bob" ? "active" : "inactive";
     console.log(el.className);

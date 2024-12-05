@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>one</p>
+    <button onclick="chg()">click</button>
+</body>
+<script>
+    let a=3;
+    let k=document.querySelector('p');
+    function chg(){
+        if(a===3){
+        k.style.color='blue';
+        a--;
+    }
+        else {
+            k.style.color='red';  
+            a=3;
+        }
+
+    }
+</script>
+</html>
