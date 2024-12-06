@@ -3,13 +3,13 @@ let k=[];
 let b=a.toString();
 for(let i=0;i<b.length;i++){
     if(b[i]==='s'){
-       b[i]=b[i].toUpperCase();
+       k.push(b[i].toUpperCase())
+       continue;
     }
-    b[i]=b[i+1];
-    // k.push(b[i]);
-    console.log(b[i]);
+    k.push(b[i]);
     
 }
-
+    
+console.log(k.join(''));
 
 

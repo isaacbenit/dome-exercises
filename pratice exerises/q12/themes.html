@@ -1,0 +1,33 @@
+<!-- Dark mode: Write a program that changes the element’s background color to black 
+ and text to white when a user clicks on a button. When a button is clicked again it 
+ changes back to the default style. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>isaac is good</h1>
+    <button onclick="chg()"> change color and background</button>
+</body>
+<script>
+    let i=document.querySelector('h1');
+    let x=0;
+    function chg(){
+        if(x===0){
+            i.style.backgroundColor='black'
+            i.style.color='white'
+            x=1;
+        }
+        else{
+            i.style=''
+            x=0;
+
+        }
+        
+    }
+
+</script>
+</html>

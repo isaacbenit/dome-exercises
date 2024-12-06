@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>one</p>
+    <p id="kelly">one</p><br>
+  </body>
+  <script>
+    let me=document.querySelector('#kelly')
+    function chg(){
+        me.style.backgroundColor='black';
+    }
+    function cg(){
+        me.style.backgroundColor='brown';
+    }
+    me.addEventListener('mouseover',chg);
+    me.addEventListener('mouseout',cg)
+    let p = document.querySelector("p").innerHTML;
+    let z = [p, "hallo"];
+
+    let s = z.map(foo);
+    
+    function foo(f) {
+        return f[1].toUpperCase();
+    }
+    let x = ''
+    for(let i=0; i<z[0].length;i++){
+        if(i===1){
+            x+=s[0]
+        }else{
+            x+=z[0][i]
+        }
+    }
+    console.log(s)
+    console.log(z)
+    console.log(x)
+  </script>
+</html>
