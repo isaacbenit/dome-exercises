@@ -8,14 +8,15 @@ console.log(a.length)
 for(let i = 0; i<a.length;i++)
 {
     if (a[i-1]===' ' || a[i-1]==='-'){
-        // a[i].skip(i);
-        b.push(a[i].toUpperCase()); 
+    
+     b.push(a[i].toUpperCase()); 
+    
         continue
     }
     
-    
     b.push(a[i]);
 }
-// b.split('-')
 console.log(b.join('').split('-').join('').split(' ').join(''));
+// let m=0;
+// console.log(Math.sign(m))
 
