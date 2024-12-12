@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li class="list">one</li>
+        <li class="list">two</li>
+        <li class="list">thre</li>
+        <li class="list">four</li>
+    </ul>
+    <button onclick="rmv()">click to remove</button>
+</body>
+<script>
+    
+    let a=document.getElementsByClassName('list')
+    console.log(a)
+    function rmv(){
+        let k=a.length-1
+            a[k].remove()
+            k--
+    }
+</script>
+</html>

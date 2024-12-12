@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="vis()" id="visible">click for visibility</button>
+    <button onclick="sz()" id="size">click to increase size</button>
+    <p id="prg">isaac can come and go</p>
+  </body>
+  <script>
+    let a = document.querySelector("#prg");
+    a.style.backgroundColor = "red";
+    let k = true
+    function vis() {
+      if ((k === true)) {
+        a.style.display='none'
+        k = false
+    }
+      else {
+        a.style.display = 'block'
+        k = true;
+      }
+    }
+    let p=true
+    function sz(){
+        
+        if(p===true){
+            a.style.fontSize= 'xxx-large'
+            p=false
+        }
+        
+        else {
+             a.style.fontSize= ''
+            p=true
+        }
+    }
+  </script>
+</html>

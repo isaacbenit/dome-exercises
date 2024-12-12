@@ -12,15 +12,15 @@
 
 <script>
     let z=document.getElementById('hd');
-    z.style.display='none';
+    // z.style.display='none';
     let i=true;
     function show(){
         if(i === true){
-            z.style.visibility ='visible';
+            z.style.display ='none';
             i=false;
         }
         else{
-            z.style.visibility='hidden';
+            z.style.display='block';
             i=true;
         }
     }

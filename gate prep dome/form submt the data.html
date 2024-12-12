@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" onsubmit=" return false">
+        <input type="text" id="fname" >
+        <input type="password" id="password">
+        <input type="submit" id="submit" onclick="allert()">
+    </form>
+</body>
+<script>
+    
+    
+    function allert(){
+    let name=document.querySelector('#fname').value
+    let paw=document.querySelector('#password').value
+        alert(` the first name is:${name} the password is:${paw} `)
+    
+}
+</script>
+
+</html>

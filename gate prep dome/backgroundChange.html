@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="chg()" id="bck">click</button>
+    <p>this the the paragraph will change</p>
+</body>
+<script>
+    let k=0
+    let a=document.querySelector('p')
+    function chg(){
+        if(k===0){
+        a.style.backgroundColor= 'yellow'
+        k=1
+        }
+        else if(k===1){
+            a.style.backgroundColor= ''
+            k=0
+        }
+    }
+</script>
+</html>

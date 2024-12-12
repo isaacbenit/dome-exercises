@@ -11,5 +11,5 @@
 // a();
 let k = [1,3,5,6,6,20,45,5];
 let st= new Set(k)
-let st1=[...st]
+let st1=[...new Set(k)]
 console.log(st1.reduce((a,b)=> a+b))
