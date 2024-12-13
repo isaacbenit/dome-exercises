@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="show">this the day that the lord has made we will rejoice and be grad in it</p>
+    <button onclick="textchg()">click</button>
+    <button onclick="gobck()">click to to go back</button>
+</body>
+<script>
+    let b=document.querySelector('#show').textContent
+    
+    function textchg(){
+        let a=document.querySelector('#show')   
+        a.innerHTML='isaac benit '
+        console.log(a)
+        // a.textcontet='<p>this day is good <p>'
+    }
+    function gobck(){
+        let b=document.querySelector('#show').innerHTML
+        b.textContent= 'this the day that the lord has made we will rejoice and be grad in it'
+    }
+</script>
+</html>

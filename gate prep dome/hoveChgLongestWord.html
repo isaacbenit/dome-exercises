@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p onmouseover="hvchg()" id="pg">this is my best day characteristis</p>
+    <p onmouseover="chg()" id="two">is is it</p>
+</body>
+<script>
+    function chg(){
+        let mn=document.querySelector('#two')
+        mn.style.backgroundColor='black'
+    }
+    function hvchg(){
+        let a= document.querySelector('#pg').innerHTML
+        let b=a.split(' ')
+        let k=[]
+        let z=[]
+        for(let i=0;i<b.length;i++){
+            k.push(b[i].length)
+        }
+        let m=k.indexOf(Math.max(...k))
+        console.log(m)
+        b=b.join(' ')
+        for(let i=0;i<b.length;i++){
+            if(a[i]===a[m]){
+                z.push(a[i])
+            }
+            z.push(a[i])
+        }
+        
+    }
+    console.log(z.textcontent)
+
+</script>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>this is the way to go</p>
+    <button onclick="Bck()">click me</button>
+</body>
+<script>
+    let a=document.querySelector('body')
+    let m=1
+    function Bck(){
+        a.style.backgroundColor= `rgb(${Math.random()*255},${Math.random()*255},${ Math.random()*255})`;
+    //     if (m===1){
+    //     a.style.backgroundColor= `rgb(${Math.random()*255},${Math.random()*255},${ Math.random()*255})`;
+    //         m=0
+    // }
+    //     // else{
+    //     //     a.style.backgroundColor='gray'
+    //     //     m=1  
+    //     // }
+    }
+</script>
+</html>
+<style>
+    b{
+        color: rgb(240, 255, 255);
+    }
+</style>

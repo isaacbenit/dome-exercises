@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="mamayake"></p>
+    <p class="pee"></p>
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>four</li>
+    </ul>
+    <button onclick="chg()" id="ben">click to add</button>
+
+</body>
+<script>
+    mamayake.innerHTML='nyoko'
+    peee.innerHTML='oya'
+//    let b=document.createElement('p')
+//    b.textContent='isaac'
+//    document.body.appendChild(b)
+// document.body.innerHTML='<p >isaac</p>'
+// let a=document.querySelector('#ben')
+ function chg(){
+    let ul=document.querySelector('ul')
+    console.log(ul)
+    let b=document.createElement('li')
+    b.textContent='isaac'
+    ul.prepend(b)
+}
+
+</script>
+</html>
