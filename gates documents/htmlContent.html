@@ -1,0 +1,31 @@
+<!-- Create a form with two input fields for the first and last name. When the user submits the form, display the message "The entered name is" followed by the names from the input fields on the page.
+
+Example: If the first name was John and the last name was Doe you should display
+
+The entered name is John Doe -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" onsubmit="return false">
+        <input type="text" id="fname">
+        <input type="text" id="lname">
+        <input type="submit" onclick="getn()">
+    </form>
+    <p id="disp"></p>
+</body>
+<script>
+    prevent default
+    function getn(){
+        let a=document.querySelector('#fname').value
+        let b=document.querySelector('#lname').value
+        let p=document.querySelector('#disp')
+        p.innerHTML=`The entered name is ${a} ${b}`
+    }
+</script>
+</html>
